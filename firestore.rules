@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Utility Customer Service Engine Documents
+    // Allow public or authenticated read and write for app prototype and workflows
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

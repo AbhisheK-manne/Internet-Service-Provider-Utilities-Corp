@@ -1,0 +1,6 @@
+{
+  "name": "Utility Customer Service & Pega Workflows",
+  "description": "Comprehensive Energy & Utilities customer service platform and interactive Pega Blueprint (BP-2447035) workflow engine with SLA tracking and multi-persona operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

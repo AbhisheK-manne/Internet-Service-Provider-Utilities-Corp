@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "UserProfile": {
+      "fields": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "accountNumber": { "type": "string" },
+        "serviceAddress": { "type": "string" },
+        "serviceType": { "type": "string" },
+        "meterId": { "type": "string" },
+        "substation": { "type": "string" },
+        "ratePlan": { "type": "string" },
+        "isSpecialNeeds": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "CaseRecord": {
+      "fields": {
+        "id": { "type": "string" },
+        "workflowType": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "customerName": { "type": "string" },
+        "customerPhone": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "accountNumber": { "type": "string" },
+        "serviceAddress": { "type": "string" },
+        "serviceType": { "type": "string" },
+        "currentStage": { "type": "string" },
+        "priority": { "type": "string" },
+        "sentiment": { "type": "string" },
+        "sentimentScore": { "type": "number" },
+        "assignedPersona": { "type": "string" },
+        "assignedToName": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "slaGoalMinutes": { "type": "number" },
+        "slaDeadlineMinutes": { "type": "number" },
+        "elapsedMinutes": { "type": "number" },
+        "isSpecialNeeds": { "type": "boolean" },
+        "activityHistory": { "type": "array" }
+      }
+    },
+    "OutageGridZone": {
+      "fields": {
+        "id": { "type": "string" },
+        "zoneName": { "type": "string" },
+        "gridSector": { "type": "string" },
+        "status": { "type": "string" },
+        "severity": { "type": "string" },
+        "affectedCustomers": { "type": "number" },
+        "cause": { "type": "string" },
+        "estimatedRestorationTime": { "type": "string" },
+        "startTime": { "type": "string" },
+        "leadTechnician": { "type": "string" },
+        "substation": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" }
+      }
+    },
+    "DataObjectRecord": {
+      "fields": {
+        "id": { "type": "string" },
+        "objectType": { "type": "string" },
+        "name": { "type": "string" },
+        "systemOfRecord": { "type": "string" },
+        "details": { "type": "object" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  },
+  "rules": {
+    "user_profiles": {
+      "read": "true",
+      "write": "true"
+    },
+    "cases": {
+      "read": "true",
+      "write": "true"
+    },
+    "outages": {
+      "read": "true",
+      "write": "true"
+    },
+    "data_objects": {
+      "read": "true",
+      "write": "true"
+    }
+  }
+}
